@@ -38,4 +38,22 @@ layout: default
             {% endfor %}
         </div>
     </section>
+
+    <section>
+        <header>
+            <h2>Contact Me</h2>
+        </header>
+        <form action="https://getsimpleform.com/messages?form_api_token=8c13c56fd9b2ca09f6e2487ad8c36ca6" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='https://jigesh-parekh.github.io/thank-you' />
+          <!-- all your input fields here.... -->
+          <input type='text' name='name' placeholder="Your full name" />
+          <br>
+          <input type='email' name='email' placeholder="Your email"/>
+          <br>
+          <textarea name="message" placeholder="Write your message"></textarea>
+          
+          <input type='submit' value="Send Message" />
+        </form>
+    </section>
 </div>
